@@ -3,10 +3,13 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdButtonModule, MdCardModule, MdCheckboxModule, MdMenuModule, MdToolbarModule, MdIconModule} from '@angular/material';
+import { HelloWorldComponent } from './hello-world/hello-world.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HelloWorldComponent
   ],
   imports: [
     BrowserModule,
@@ -16,7 +19,8 @@ import {MdButtonModule, MdCardModule, MdCheckboxModule, MdMenuModule, MdToolbarM
     MdCardModule,
     MdCheckboxModule,
     MdToolbarModule,
-    MdIconModule
+    MdIconModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
