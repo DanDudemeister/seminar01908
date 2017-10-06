@@ -11,6 +11,7 @@ export class HelloWorldComponent implements OnInit {
   public url: string;
   public inputValue: string;
   public showMe: boolean;
+  public countries: string[];
 
   constructor() { }
 
@@ -19,6 +20,7 @@ export class HelloWorldComponent implements OnInit {
     this.url = 'https://www.fernuni-hagen.de/';
     this.inputValue = 'Change me!';
     this.showMe = true;
+    this.countries = ['Germany', 'France', 'Spain', 'UK'];
   }
 
   public handleClick(): void {
