@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import {HelloWorldService} from '../hello-world.service';
 
 @Component({
   selector: 'app-hello-world',
   templateUrl: './hello-world.component.html',
-  styleUrls: ['./hello-world.component.css']
+  styleUrls: ['./hello-world.component.css'],
+  providers: [HelloWorldService]
 })
 export class HelloWorldComponent implements OnInit {
 
@@ -13,7 +15,13 @@ export class HelloWorldComponent implements OnInit {
   public showMe: boolean;
   public countries: string[];
 
-  constructor() { }
+  private helloWorldService: HelloWorldService;
+
+  constructor(
+    helloWorldService: HelloWorldService
+  ) {
+    this.helloWorldService = helloWorldService;
+  }
 
   public ngOnInit(): void {
     this.name = 'world';

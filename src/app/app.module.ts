@@ -5,6 +5,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdButtonModule, MdCardModule, MdCheckboxModule, MdMenuModule, MdToolbarModule, MdIconModule} from '@angular/material';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import {FormsModule} from '@angular/forms';
+import {HelloWorldService} from './hello-world.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import {FormsModule} from '@angular/forms';
     MdIconModule,
     FormsModule
   ],
-  providers: [],
+  providers: [HelloWorldService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
