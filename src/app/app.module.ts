@@ -6,11 +6,13 @@ import {MdButtonModule, MdCardModule, MdCheckboxModule, MdMenuModule, MdToolbarM
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import {FormsModule} from '@angular/forms';
 import {HelloWorldService} from './hello-world.service';
+import { HelloWorldDirective } from './directives/hello-world.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloWorldComponent
+    HelloWorldComponent,
+    HelloWorldDirective
   ],
   imports: [
     BrowserModule,
