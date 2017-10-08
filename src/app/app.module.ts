@@ -8,13 +8,15 @@ import {FormsModule} from '@angular/forms';
 import {HelloWorldService} from './hello-world.service';
 import { HelloWorldDirective } from './directives/hello-world.directive';
 import { HelloWorld2Component } from './output-binding/hello-world2/hello-world2.component';
+import { RemoveSpacesPipe } from './pipes/remove-spaces.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloWorldComponent,
     HelloWorldDirective,
-    HelloWorld2Component
+    HelloWorld2Component,
+    RemoveSpacesPipe
   ],
   imports: [
     BrowserModule,
