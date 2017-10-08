@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {HelloWorldService} from '../hello-world.service';
 
 @Component({
@@ -9,6 +9,7 @@ import {HelloWorldService} from '../hello-world.service';
 })
 export class HelloWorldComponent implements OnInit {
 
+  @Input() public hello: string;
   public name: string;
   public url: string;
   public inputValue: string;
@@ -29,6 +30,8 @@ export class HelloWorldComponent implements OnInit {
     this.inputValue = 'Change me!';
     this.showMe = true;
     this.countries = ['Germany', 'France', 'Spain', 'UK'];
+
+    console.log('Value from parent is: ', this.hello);
   }
 
   public handleClick(): void {
