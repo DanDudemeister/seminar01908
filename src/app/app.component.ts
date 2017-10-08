@@ -16,4 +16,8 @@ export class AppComponent {
   ) {
     this.helloWorldService = helloWorldService;
   }
+
+  public handleHelloWorld(event: string): void {
+    console.log('Received \'' + event + '\' from child-component');
+  }
 }

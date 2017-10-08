@@ -7,12 +7,14 @@ import { HelloWorldComponent } from './hello-world/hello-world.component';
 import {FormsModule} from '@angular/forms';
 import {HelloWorldService} from './hello-world.service';
 import { HelloWorldDirective } from './directives/hello-world.directive';
+import { HelloWorld2Component } from './output-binding/hello-world2/hello-world2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloWorldComponent,
-    HelloWorldDirective
+    HelloWorldDirective,
+    HelloWorld2Component
   ],
   imports: [
     BrowserModule,
