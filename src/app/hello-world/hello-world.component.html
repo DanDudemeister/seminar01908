@@ -26,3 +26,13 @@
 <div>
   Pipe Example: {{ 'Hello World!' | removeSpaces }}
 </div>
+
+<div>
+  More pipes:<br>
+  {{ 'Hello World!' | lowercase }}<br>
+  {{ 'hello world!' | titlecase }}<br>
+  {{ '2017-12-23' | date: 'd.M.y' }}<br>
+  {{ 3.14159265359 | number: '1.2-2' }}<br>
+  {{ 0.33333333 | percent: '1.2-2' }}<br>
+  {{ 100 | currency: 'USD': true }}
+</div>
