@@ -1,5 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {HelloWorldService} from '../hello-world.service';
+import {Http} from '@angular/http';
+import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'app-hello-world',
@@ -15,13 +17,17 @@ export class HelloWorldComponent implements OnInit {
   public inputValue: string;
   public showMe: boolean;
   public countries: string[];
+  public helloWorld: string;
 
   private helloWorldService: HelloWorldService;
+  private http: Http;
 
   constructor(
-    helloWorldService: HelloWorldService
+    helloWorldService: HelloWorldService,
+    http: Http
   ) {
     this.helloWorldService = helloWorldService;
+    this.http = http;
   }
 
   public ngOnInit(): void {
@@ -36,5 +42,9 @@ export class HelloWorldComponent implements OnInit {
 
   public handleClick(): void {
     console.log('Button clicked!');
+
+    this.http.get('/helloworld')
+      .map(response => response.json())
+      .subscribe(mappedResponse => console.log('Received response \'' + mappedResponse + '\' from server!'));
   }
 }

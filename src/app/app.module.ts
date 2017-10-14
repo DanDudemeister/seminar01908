@@ -9,6 +9,7 @@ import {HelloWorldService} from './hello-world.service';
 import { HelloWorldDirective } from './directives/hello-world.directive';
 import { HelloWorld2Component } from './output-binding/hello-world2/hello-world2.component';
 import { RemoveSpacesPipe } from './pipes/remove-spaces.pipe';
+import {HttpModule} from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { RemoveSpacesPipe } from './pipes/remove-spaces.pipe';
     MdCheckboxModule,
     MdToolbarModule,
     MdIconModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   providers: [HelloWorldService],
   bootstrap: [AppComponent]
