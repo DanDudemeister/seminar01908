@@ -43,6 +43,14 @@ export class HelloWorldComponent implements OnInit {
   public handleClick(): void {
     console.log('Button clicked!');
 
+    let evenNumbers = [1, 2, 3, 4, 5, 6].filter(function (number) {
+      return number % 2 === 0;
+    });
+    console.log('evenNumbers (anonymous function): ', evenNumbers);
+
+    evenNumbers = [1, 2, 3, 4, 5, 6].filter(number => number % 2 === 0);
+    console.log('evenNumbers (arrow function): ', evenNumbers);
+
     // this.http.get('/helloworld')
     //   .map(response => response.json())
     //   .subscribe(mappedResponse => console.log('Received response \'' + mappedResponse + '\' from server!'));
