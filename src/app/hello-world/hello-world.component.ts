@@ -43,8 +43,8 @@ export class HelloWorldComponent implements OnInit {
   public handleClick(): void {
     console.log('Button clicked!');
 
-    this.http.get('/helloworld')
-      .map(response => response.json())
-      .subscribe(mappedResponse => console.log('Received response \'' + mappedResponse + '\' from server!'));
+    // this.http.get('/helloworld')
+    //   .map(response => response.json())
+    //   .subscribe(mappedResponse => console.log('Received response \'' + mappedResponse + '\' from server!'));
   }
 }
