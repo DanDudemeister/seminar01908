@@ -10,6 +10,7 @@ import { HelloWorldDirective } from './directives/hello-world.directive';
 import { HelloWorld2Component } from './output-binding/hello-world2/hello-world2.component';
 import { RemoveSpacesPipe } from './pipes/remove-spaces.pipe';
 import {HttpModule} from '@angular/http';
+import {AppRoutingModule} from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {HttpModule} from '@angular/http';
     MdToolbarModule,
     MdIconModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [HelloWorldService],
   bootstrap: [AppComponent]
