@@ -1,16 +1,16 @@
 import {RouterModule, Routes} from '@angular/router';
-import {HelloWorldComponent} from './hello-world/hello-world.component';
-import {HelloWorld2Component} from './output-binding/hello-world2/hello-world2.component';
 import {NgModule} from '@angular/core';
+import {OverviewComponent} from "./overview/overview.component";
 
 const routes: Routes = [
-  { path: 'first', component: HelloWorldComponent },
-  { path: 'second', component: HelloWorld2Component }
+    {path: '**', redirectTo: '/overview', pathMatch: 'full'},
+    {path: 'overview', component: OverviewComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-  providers: []
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule],
+    providers: []
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+}
