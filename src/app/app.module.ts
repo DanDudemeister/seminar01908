@@ -15,12 +15,14 @@ import {HttpModule} from '@angular/http';
 import {AppRoutingModule} from './app-routing.module';
 import {OverviewComponent} from './overview/overview.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
+import { DataBindingsComponent } from './data-bindings/data-bindings.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         OverviewComponent,
-        InterpolationComponent
+        InterpolationComponent,
+        DataBindingsComponent
     ],
     imports: [
         BrowserModule,
