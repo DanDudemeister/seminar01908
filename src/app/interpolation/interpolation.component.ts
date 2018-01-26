@@ -17,7 +17,6 @@ export class InterpolationComponent implements OnInit {
 
         this.componentHtml = this.sanitized.bypassSecurityTrustHtml(`
             import {Component, OnInit} from '@angular/core';
-            import {DomSanitizer} from "@angular/platform-browser";
             
             @Component({
                 selector: 'app-interpolation',
