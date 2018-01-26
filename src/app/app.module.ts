@@ -14,11 +14,13 @@ import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {AppRoutingModule} from './app-routing.module';
 import {OverviewComponent} from './overview/overview.component';
+import { InterpolationComponent } from './interpolation/interpolation.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        OverviewComponent
+        OverviewComponent,
+        InterpolationComponent
     ],
     imports: [
         BrowserModule,
