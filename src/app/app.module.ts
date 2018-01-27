@@ -16,13 +16,15 @@ import {AppRoutingModule} from './app-routing.module';
 import {OverviewComponent} from './overview/overview.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { DataBindingsComponent } from './data-bindings/data-bindings.component';
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         OverviewComponent,
         InterpolationComponent,
-        DataBindingsComponent
+        DataBindingsComponent,
+        StructuralDirectivesComponent
     ],
     imports: [
         BrowserModule,
