@@ -1,3 +1,15 @@
 ul {
     text-align: left;
 }
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
