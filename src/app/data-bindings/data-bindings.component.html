@@ -1,3 +1,53 @@
-<p>
-  data-bindings works!
-</p>
+<div>
+    <h2>property-binding.component.ts:</h2>
+    <pre>
+        <code [innerHtml]="componentHtmlPropertyBinding"></code>
+    </pre>
+</div>
+<div>
+    <h2>property-binding.component.html:</h2>
+    <pre>
+        <code [innerHtml]="templateHtmlPropertyBinding"></code>
+    </pre>
+</div>
+<div>
+    <h2>Browser:</h2>
+    <a [href]="urlFromComponent">Link with URL from a component</a>
+</div>
+<br><br><br><br><br><br>
+
+<div>
+    <h2>event-binding.component.ts:</h2>
+    <pre>
+        <code [innerHtml]="componentHtmlEventBinding"></code>
+    </pre>
+</div>
+<div>
+    <h2>event-binding.component.html:</h2>
+    <pre>
+        <code [innerHtml]="templateHtmlEventBinding"></code>
+    </pre>
+</div>
+<div>
+    <h2>Browser:</h2>
+    <button (click)="clickHandlerFromComponent()">A button with a click-handler</button>
+</div>
+<br><br><br><br><br><br>
+
+<div>
+    <h2>two-way-binding.component.ts:</h2>
+    <pre>
+        <code [innerHtml]="componentHtmlTwoWayBinding"></code>
+    </pre>
+</div>
+<div>
+    <h2>two-way-binding.component.html:</h2>
+    <pre>
+        <code [innerHtml]="templateHtmlTwoWayBinding"></code>
+    </pre>
+</div>
+<div>
+    <h2>Browser:</h2>
+    <input [(ngModel)]="inputValue" type="text">
+    <div>{{ inputValue }}</div>
+</div>
