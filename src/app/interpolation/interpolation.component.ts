@@ -27,11 +27,11 @@ export class InterpolationComponent implements OnInit {
             
                 public property: string;
             
-                constructor() {
+                constructor() {}
+            
+                ngOnInit() {
                     this.property = 'interpolation';
                 }
-            
-                ngOnInit() {}
             }
         `);
 

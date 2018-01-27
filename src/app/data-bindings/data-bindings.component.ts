@@ -32,11 +32,11 @@ export class DataBindingsComponent implements OnInit {
             
                 public urlFromComponent: string;
             
-                constructor() {
+                constructor() {}
+            
+                ngOnInit() {
                     this.urlFromComponent = 'overview';
                 }
-            
-                ngOnInit() {}
             }
         `);
 
