@@ -17,6 +17,7 @@ import {OverviewComponent} from './overview/overview.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { DataBindingsComponent } from './data-bindings/data-bindings.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
     declarations: [
@@ -24,7 +25,8 @@ import { StructuralDirectivesComponent } from './structural-directives/structura
         OverviewComponent,
         InterpolationComponent,
         DataBindingsComponent,
-        StructuralDirectivesComponent
+        StructuralDirectivesComponent,
+        PipesComponent
     ],
     imports: [
         BrowserModule,
